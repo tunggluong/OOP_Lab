@@ -1,0 +1,14 @@
+READING ASSIGNMENT
+When should accessor(getter) methods be used?
+
+1.	When Returning an Object in Terms of an Interface:
+•	If a method returns an object in the form of an interface that the object implements, this approach is different from a typical "getter." By returning an interface, the external code interacts only with the interface, not with the specific implementation details of the object.
+•	If you later need to change how the object is implemented, you can adjust the definition of the returned object to accommodate the changes without impacting the external code. The interface acts as a protective layer, insulating the internal implementation from exposure.
+
+2.	Boundary Classes in Procedural Systems:
+•	When an OOP system interfaces with external procedural systems (such as operating systems, databases, or procedural libraries), boundary classes often need to use getters and setters to interact with these systems. For example, in Java, JDBC (Java Database Connectivity) includes many accessor methods to allow flexible interaction with databases because JDBC’s designers cannot predict every specific use case.
+•	In such cases, the flexibility of getters and setters is necessary to support a wide range of potential uses.
+
+
+
+
